@@ -1,0 +1,16 @@
+<div class = "fileUpload">
+    <h2>Please Select A file to Upload</h2>
+    <input type="file"
+           id="file"
+           (change)="handleFileInput($event.target.files)">
+
+    <button (click)="uploadFile()">Upload File</button>
+</div>
+
+
+<div class="filesInBucket" *ngIf="adminUser">
+    <h2>Click a File Below to Download</h2>
+    <div *ngFor="let url of downloadLinks; let idx = index">
+        <a href={{url}} target="_blank" rel='noreferrer' download="">{{fileNames[idx]}}</a>
+    </div>
+</div>

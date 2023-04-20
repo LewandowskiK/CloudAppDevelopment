@@ -1,0 +1,11 @@
+{
+  "resourceName": "s3clouddevtestappstorage838d5e85",
+  "bucketName": "clouddevtestapp-storage-838d5e85",
+  "policyUUID": "bbb7a537",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ"
+  ]
+}
